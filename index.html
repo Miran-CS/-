@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>بانگهێشتی هاوسەرگیری</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #f7e1ff, #ffe8f0);
+      color: #333;
+      line-height: 1.6;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      padding: 40px 30px;
+    }
+
+    .header {
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-size: 2.8rem;
+      color: #d81b60;
+      font-weight: 700;
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      color: #9c27b0;
+    }
+
+    .image-wrapper {
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .photo {
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      border: 5px solid #ffe4e1;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .photo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .names {
+      font-size: 2rem;
+      margin-top: 15px;
+      font-weight: 600;
+      color: #7b1fa2;
+    }
+
+    .heart {
+      font-size: 2.5rem;
+      color: #e91e63;
+      margin-top: 10px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.15);
+      }
+    }
+
+    .details {
+      margin: 30px 0;
+      background: #f3e5f5;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+      font-size: 1.2rem;
+      color: #4a148c;
+      line-height: 1.8;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #d81b60, #ad1457);
+      padding: 14px 30px;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      margin-top: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #ad1457, #d81b60);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+    }
+
+    #blessing {
+      margin-top: 25px;
+      font-size: 1.4rem;
+      color: #6a1b9a;
+      min-height: 40px;
+      font-weight: 500;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 1rem;
+      color: #555;
+      padding: 20px;
+    }
+
+    /* Hearts animation styles */
+    #hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1000;
+      overflow: hidden;
+    }
+
+    .heart-shape {
+      position: absolute;
+      top: -10vh;
+      animation: fall linear infinite;
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-10vh) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* Additional small styles for responsiveness */
+    @media (max-width: 768px) {
+      body {
+        padding: 20px;
+      }
+
+      .container {
+        padding: 30px 20px;
+      }
+
+      .photo {
+        width: 200px;
+      }
+
+      .header h1 {
+        font-size: 2rem;
+      }
+
+      .names {
+        font-size: 1.5rem;
+      }
+
+      .details {
+        font-size: 1.1rem;
+      }
+
+      .btn {
+        font-size: 1rem;
+        padding: 12px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="hearts"></div>
+  
+  <div class="container">
+    <div class="header">
+      <h1>🔹 بە ناوی خوای گەورە و میهرەبان 🔹</h1>
+    </div>
+
+    <div class="image-wrapper">
+      <img src="photo.JPG" alt="Miran and Sazan" class="photo" />
+    </div>
+
+    <div class="title">بانگهێشتی هاوسەرگیری</div>
+
+    <div class="names">مــیــران 💖 ســازان</div>
+
+    <div class="heart">💞</div>
+
+    <div class="details">
+      <p>بە دڵێکی پڕ لە خۆشحاڵی بانگێشتان دەکەین بۆ بەشداربوون لە ئاھەنگی هاوسەرگیریمان</p>
+      <p>📅 ڕۆژ: ٢٣ی حوزەیران ٢٠٢٦</p>
+      <p>🕕 کات: ٦ی ئێوارە</p>
+      <p>📍 شوێن: هۆڵی دڵان - چوارقورنە</p>
+    </div>
+
+    <button class="btn" onclick="sendBlessing()">ناردنی پەیامی پیرۆزبایی</button>
+    <div id="blessing"></div>
+
+    <div class="footer">❤️ بەڕێزانتان بەخێربێن بۆ ڕۆژێکی تایبەتی ژیانی ئێمە ❤️</div>
+  </div>
+
+  <script>
+    const blessings = [
+      "ژیانەکەتان پڕ بێت لە خۆشی و کامەرانی",
+      "خۆشەویستیتان هەمیشە بەردەوام بێت💐",
+      "ڕۆژێک بێ لە خۆشحاڵی و پیرۆزبایی 🎉",
+      "هاوسەرگیریتان ببێتە سەرچاوەی سەرکەوتن 💞",
+      "دڵتان هەمیشە یەکتری بوێت🕊️",
+      "خوا ماڵەکەتان پڕ بکات لە منداڵی جوان و تەندروست 👶",
+      "ژیانی ئاسوودە و شادتان هەبێت🙏",
+      "لە ڕێگای خۆشەویستیدا هەمیشە گەشاوە بن 🌺",
+      "دڵی یەکتر خۆش  بکەن هەر ڕۆژێک 💕",
+      "خوا گومانی لەناوبەر  نەهێڵێت 🤲",
+      " ئەمڕۆ  سەرەتای خۆشترین ڕۆژانتانە بەختەوار بن🌟",
+      "گوڵ و بەهاری ڕەنگارەنگ لە ماڵەکەتاندا بێت 🌸",
+      "پەیوەندیتان  جوان و خۆشەویستی و پتەو بێت 💝",
+      "هەموو ئارەزووەکانتان بە جوانترین شێوە بێنە دی ⭐",
+      "ڕۆژگاری ئاشتی و ئارامی بەرەو ڕووتان بێت 🕊️",
+      "خوا سەرکەوتن لە هەموو ڕووەوە بۆتان بنووسێت 📝",
+      "پتر و پتر یەکتریتان خۆشبوێت و لێ نزیک بنەوە 💗",
+      "ماڵەکەتان مایەی خۆشی و سەرکەوتن بێت هەمیشە 🏡"
+    ];
+
+    function sendBlessing() {
+      const rand = Math.floor(Math.random() * blessings.length);
+      document.getElementById("blessing").innerText = blessings[rand];
+    }
+  </script>
+
+  <script>
+    const hearts = document.getElementById('hearts');
+
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart-shape');
+      heart.textContent = '💗';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.fontSize = (Math.random() * 2 + 1) + 'em';
+      heart.style.animationDuration = (Math.random() * 6 + 4) + 's';
+      hearts.appendChild(heart);
+      setTimeout(() => heart.remove(), 11000);
+    }
+
+    setInterval(createHeart, 350);
+  </script>
+</body>
+
+</html>
